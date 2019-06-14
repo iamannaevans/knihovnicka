@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block mycontent %}
+<h2>{{ object.title }}</h2>
+<h4>{{ object.writer.name }}</h4>
+<h4>{{ object.year|date:'Y' }}</h4>
+<p>{% if object.borrowed %} Borrowed by: {{ object.borrowed_by }} {% endif %}</p>
+{% endblock %}

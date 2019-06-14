@@ -17,9 +17,13 @@ from django.contrib import admin
 from django.urls import path
 
 from pages.views import home_view, authors_view
+from books.views import book_detail_view
+from books.views import author_detail_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name='home'),
     path('authors/', authors_view, name='authors'),
+    path('book/', book_detail_view, name='book_detail_view'),
+    path('author/', author_detail_view, name='author_detail_view'),
 ]
