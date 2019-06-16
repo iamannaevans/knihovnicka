@@ -4,9 +4,6 @@ from django.urls import reverse
 # Create your models here.
 class Author(models.Model):
     name = models.CharField(max_length=60)
-    # books = models.ForeignKey(Book, on_delete=models.CASCADE)
-    # -- tohle udela dropdown, ale ja chci aby to vyistovalo automaticky vsechny knihy s timto autorem
-
     def author_get_absolute_url(self):
         return reverse('author_detail_view', kwargs={'id': self.id})
 

@@ -20,17 +20,17 @@ def author_list_view(request):
     return render(request, 'author/author_list.html', context)
 
 def book_dynamic_lookup_view(request, id):
-    obj = get_object_or_404(Book, id=id)
+    book = get_object_or_404(Book, id=id)
     context = {
-        'object': obj
+        'book': book
     }
     return render(request, 'book/detail.html', context)
 
 def author_dynamic_lookup_view(request, id):
-    obj = get_object_or_404(Author, id=id)
+    author = get_object_or_404(Author, id=id)
     books = Book.objects.filter(writer__id=id)
     context = {
-        'object': obj,
+        'author': author,
         'books': books
     }
     return render(request, 'author/detail.html', context)

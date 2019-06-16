@@ -2,8 +2,8 @@
 
 {% block mycontent %}
 
-{% for instance in object_list %}
-  <p><a href='{{ instance.book_get_absolute_url }}'>{{ instance.title }}</a></p>
+{% for book in object_list %}
+  <p><a href='{{ book.book_get_absolute_url }}'>{{ book.title }}</a></p>
 {% endfor %}
 
 {% endblock %}
