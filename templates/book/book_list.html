@@ -2,7 +2,7 @@
 
 {% block mycontent %}
 
-{% for book in object_list %}
+{% for book in books %}
   <p><a href='{{ book.get_book_url }}'>{{ book.title }}</a></p>
 {% endfor %}
 

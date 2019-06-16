@@ -12,7 +12,7 @@ def home_view(request, *args, **kwargs):
 def book_list_view(request):
     queryset = Book.objects.all()
     context = {
-        'object_list': queryset
+        'books': queryset
     }
     return render(request, 'book/book_list.html', context)
 
@@ -20,7 +20,7 @@ def book_list_view(request):
 def author_list_view(request):
     queryset = Author.objects.all()
     context = {
-        'object_list': queryset
+        'authors': queryset
     }
     return render(request, 'author/author_list.html', context)
 
@@ -47,7 +47,7 @@ def search(request):
     query = request.GET.get('q')
     results = Book.objects.filter(Q(title__icontains=query))
     context = {
-        'object_list': results,
+        'search': results,
     }
     return render(request, 'book/book_list.html', context)
 

@@ -17,7 +17,7 @@ class Book(models.Model):
     writer = models.ForeignKey(Author, on_delete=models.CASCADE)
     borrowed = models.BooleanField(default=False)
     borrowed_by = models.CharField(max_length=60, blank=True, null=False)
-    returned = models.DateField(blank=True, null=False)
+    returned = models.DateField(blank=True, null=True)
 
     # Get book url by id
     def get_book_url(self):
