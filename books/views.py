@@ -44,10 +44,17 @@ def author_dynamic_lookup_view(request, id):
 
 # Search view
 def search(request):
-    template = 'book/book_list.html'
     query = request.GET.get('q')
     results = Book.objects.filter(Q(title__icontains=query))
     context = {
         'object_list': results,
     }
-    return render(request, template, context)
+    return render(request, 'book/book_list.html', context)
+
+# View of borrowed books
+def borrowed(request):
+    queryset = Book.objects.all()
+    context = {
+        'books': queryset
+    }
+    return render(request, 'book/borrowed_books.html', context)

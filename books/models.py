@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from datetime import datetime
 
 # Create your models here.
 class Author(models.Model):
@@ -16,6 +17,7 @@ class Book(models.Model):
     writer = models.ForeignKey(Author, on_delete=models.CASCADE)
     borrowed = models.BooleanField(default=False)
     borrowed_by = models.CharField(max_length=60, blank=True, null=False)
+    returned = models.DateField(default=datetime.now(), blank=True, null=False)
 
     # Get book url by id
     def get_book_url(self):

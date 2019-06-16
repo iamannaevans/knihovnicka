@@ -4,5 +4,6 @@
 <h2>{{ book.title }}</h2>
 <h4><a href='{{ book.writer.get_author_url }}'>{{ book.writer.name }}</a></h4>
 <h4>{{ book.year|date:'Y' }}</h4>
-<p>{% if book.borrowed %} Borrowed by: {{ book.borrowed_by }} {% endif %}</p>
+<p>{% if book.borrowed %} Borrowed by: {{ book.borrowed_by }},
+  will return on: {{ book.returned }} {% else %} Currently in your library.{% endif %}</p>
 {% endblock %}

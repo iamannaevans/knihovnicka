@@ -22,7 +22,8 @@ from books.views import (
     author_list_view,
     book_dynamic_lookup_view,
     author_dynamic_lookup_view,
-    search
+    search,
+    borrowed
 )
 
 # Registering urls
@@ -33,5 +34,6 @@ urlpatterns = [
     path('authors/', author_list_view, name='author_list'),
     path('books/<int:id>/', book_dynamic_lookup_view, name='book_detail_view'),
     path('authors/<int:id>/', author_dynamic_lookup_view, name='author_detail_view'),
-    path('search/', search, name='search_results')
+    path('search/', search, name='search_results'),
+    path('borrowed/', borrowed, name='borrowed_books')
 ]
