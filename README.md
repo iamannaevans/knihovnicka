@@ -75,15 +75,15 @@ cd twisto-knihovnicka-anna
 ###### Virtual environment
 1. Create a virtual environment by pasting the following code into shell
 ```shell
-python -m venv myvirtualenv
+python -m venv venv
 ```
 2. Activate virtual environment by pasting following code into shell (Windows)
 ```shell
-myvirtualenv\Scripts\activate
+venv\Scripts\activate
 ```
 or macOS
 ```shell
-$ source myvirtualenv/bin/activate
+$ source venv/bin/activate
 ```
 
 ###### Requirements
