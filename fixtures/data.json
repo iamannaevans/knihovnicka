@@ -1,0 +1,124 @@
+[
+{
+  "model": "books.author",
+  "pk": 1,
+  "fields": {
+    "name": "J.K.Rowling"
+  }
+},
+{
+  "model": "books.author",
+  "pk": 2,
+  "fields": {
+    "name": "J.R.R. Tolkien"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 1,
+  "fields": {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "year": "2019-06-10",
+    "writer": 1,
+    "borrowed": true,
+    "borrowed_by": "Martin Novotny",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 2,
+  "fields": {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "year": "2019-06-16",
+    "writer": 1,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 3,
+  "fields": {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "year": "2019-03-04",
+    "writer": 1,
+    "borrowed": true,
+    "borrowed_by": "Jan Hezky",
+    "returned": "2019-08-08"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 4,
+  "fields": {
+    "title": "Harry Potter and the Goblet of Fire",
+    "year": "2019-06-16",
+    "writer": 1,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 5,
+  "fields": {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "year": "2019-06-16",
+    "writer": 1,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 6,
+  "fields": {
+    "title": "Harry Potter and the Half Blood Prince",
+    "year": "2019-06-16",
+    "writer": 1,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 7,
+  "fields": {
+    "title": "Harry Potter and the Deathly Hallows",
+    "year": "2019-06-16",
+    "writer": 1,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": "2019-06-16"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 8,
+  "fields": {
+    "title": "Hobbit",
+    "year": "2019-06-16",
+    "writer": 2,
+    "borrowed": true,
+    "borrowed_by": "Marie Jedlikova",
+    "returned": "2019-07-11"
+  }
+},
+{
+  "model": "books.book",
+  "pk": 10,
+  "fields": {
+    "title": "The Lord of the Rings",
+    "year": "2019-06-16",
+    "writer": 2,
+    "borrowed": false,
+    "borrowed_by": "",
+    "returned": null
+  }
+}
+]
