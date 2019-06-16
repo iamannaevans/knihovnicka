@@ -58,13 +58,6 @@ python -V
   - Name: postgres
   - Password: postgres
 
-###### Pip
-1. Download [Pip](https://bootstrap.pypa.io/get-pip.py)
-2. Open shell and paste the following code
-```shell
-python get-pip.py
-```
-
 ###### Clone repository
 1. Open shell and paste the following code
 ```shell
