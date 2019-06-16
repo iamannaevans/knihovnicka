@@ -37,3 +37,90 @@ Frontend/grafiku resit neni potreba.
 
 Hodne zdaru a tesim se na vysledek.
 Dmitrij
+
+---
+
+## Install
+
+###### Python
+1. Download [Python 3](https://www.python.org/downloads/)
+2. Install
+3. Check you installed Python correctly by pasting the following code into shell
+```shell
+python -V
+```
+
+###### PostgreSQL database
+1. Download [PostgreSQL](https://www.postgresql.org/)
+2. Install
+3. Open PgAdmin
+4. Create a new database
+  - Name: postgres
+  - Password: postgres
+
+###### Pip
+1. Download [Pip](https://bootstrap.pypa.io/get-pip.py)
+2. Open shell and paste the following code
+```shell
+python get-pip.py
+```
+
+###### Clone repository
+1. Open shell and paste the following code
+```shell
+git clone https://github.com/strelnikov/twisto-knihovnicka-anna.git
+cd twisto-knihovnicka-anna
+```
+
+###### Virtual environment
+1. Create a virtual environment by pasting the following code into shell
+```shell
+python -m venv myvirtualenv
+```
+2. Activate virtual environment by pasting following code into shell (Windows)
+```shell
+myvirtualenv\Scripts\activate
+```
+or macOS
+```shell
+$ source myvirtualenv/bin/activate
+```
+
+###### Requirements
+1. Paste the following code to shell
+```shell
+pip install -r requirements.txt
+```
+
+## Initialize
+###### Migrate
+1. Paste the following code into shell
+```shell
+python manage.py migrate
+```
+
+###### Create superuser
+1. Paste the following code into shell
+```shell
+python manage.py createsuperuser
+```
+2. Follow the instructions in shell
+
+
+## Import initial data (optional)
+1. Paste the following code into shell
+```shell
+python manage.py loaddata data.json
+```
+
+## Run
+
+###### Run Server
+1. Paste the following code into shell
+```shell
+python manage.py runserver
+```
+2. Open the link the console displays
+3. Add '/admin' to the url
+4. Log in with your superuser
+5. Add data to your database
