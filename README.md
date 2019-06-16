@@ -55,8 +55,9 @@ python -V
 2. Install
 3. Open PgAdmin
 4. Create a new database
-  - Name: postgres
-  - Password: postgres
+  - Name: 'knihovnicka'
+  - Username: 'postgres'
+  - Password: 'postgres'
 
 ###### Clone repository
 1. Open shell and paste the following code
