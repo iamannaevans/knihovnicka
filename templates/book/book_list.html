@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block mycontent %}
+
+{% for instance in object_list %}
+  <p><a href='{{ instance.book_get_absolute_url }}'>{{ instance.title }}</a></p>
+{% endfor %}
+
+{% endblock %}

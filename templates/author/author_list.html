@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block mycontent %}
+
+{% for instance in object_list %}
+  <p><a href='{{ instance.author_get_absolute_url }}'>{{ instance.name }}</a></p>
+{% endfor %}
+
+{% endblock %}
