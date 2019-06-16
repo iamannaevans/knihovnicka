@@ -4,7 +4,7 @@
 <h2>{{ author.name }}</h2>
 <h4>Book list: </h4>
 {% for book in books %}
-  <p><a href='{{ book.book_get_absolute_url }}'>{{ book.title }}</a></p>
+  <p><a href='{{ book.get_book_url }}'>{{ book.title }}</a></p>
 {% endfor %}
 
 {% endblock %}

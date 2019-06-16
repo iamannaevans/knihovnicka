@@ -3,7 +3,7 @@
 {% block mycontent %}
 
 {% for author in object_list %}
-  <p><a href='{{ author.author_get_absolute_url }}'>{{ author.name }}</a></p>
+  <p><a href='{{ author.get_author_url }}'>{{ author.name }}</a></p>
 {% endfor %}
 
 {% endblock %}

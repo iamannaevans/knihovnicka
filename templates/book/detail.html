@@ -2,7 +2,7 @@
 
 {% block mycontent %}
 <h2>{{ book.title }}</h2>
-<h4><a href='{{ book.writer.author_get_absolute_url }}'>{{ book.writer.name }}</a></h4>
+<h4><a href='{{ book.writer.get_author_url }}'>{{ book.writer.name }}</a></h4>
 <h4>{{ book.year|date:'Y' }}</h4>
 <p>{% if book.borrowed %} Borrowed by: {{ book.borrowed_by }} {% endif %}</p>
 {% endblock %}
