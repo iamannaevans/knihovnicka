@@ -47,7 +47,7 @@ def search(request):
     query = request.GET.get('q')
     results = Book.objects.filter(Q(title__icontains=query))
     context = {
-        'search': results,
+        'books': results,
     }
     return render(request, 'book/book_list.html', context)
 
